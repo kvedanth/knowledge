@@ -1,0 +1,139 @@
+site_name: Kumar Vedantham
+site_url: https://sitename.example
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.footer
+
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
+#  font:
+    #text: Merriweather Sans
+    #code: Red Hat Mono
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
+  - tables
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+
+nav:
+  - Home: index.md
+  - Python:
+      - "Home": "python/python-index.md"
+      - "Foundation & Environment":
+          - "Python Virtual Environments": "python/01_Python Virtual Environments.md"
+          - "Exception Handling": "python/02_Exception Handling.md"
+          - "Error and Exception Types": "python/03_Error and Exception Types.md"
+          - "Custom Exceptions": "python/04_Custom Exceptions.md"
+          - "File I/O": "python/05_File I-O.md"
+      - "Type System & Annotations":
+          - "Bitwise Operations": "python/06_Bitwise Operations.md"
+          - "Enumerations": "python/07_Enumerations.md"
+          - "Type Hints": "python/08_Type Hints.md"
+          - "Function Annotation": "python/09_Function Annotation.md"
+          - "Static Typing": "python/10_Static Typing.md"
+      - "Functional Programming":
+          - "Closures": "python/11_Closures.md"
+          - "Lambda Functions": "python/12_Lambda Functions.md"
+          - "Higher-Order Functions": "python/13_Higher-Order Functions.md"
+          - "Partial Functions": "python/14_Partial Functions.md"
+          - "Currying": "python/15_Currying.md"
+          - "Functional Programming Paradigm": "python/16_Functional Programming Paradigm.md"
+      - "Decorators & Metaprogramming":
+          - "Decorators": "python/17_Decorators.md"
+          - "Property Decorators": "python/18_Property Decorators.md"
+          - "Magic Methods": "python/19_Magic Methods.md"
+          - "Operator Overloading": "python/20_Operator Overloading.md"
+          - "Callable Objects": "python/21_Callable Objects.md"
+          - "Monkey Patching": "python/38_Monkey Patching.md"
+          - "Metaprogramming": "python/39_Metaprogramming.md"
+          - "Dynamic Code Execution (eval, exec)": "python/40_Dynamic Code Execution (eval, exec).md"
+      - "Object-Oriented Programming":
+          - "Data Classes": "python/22_Data Classes.md"
+          - "Duck Typing": "python/23_Duck Typing.md"
+          - "Multiple Inheritance": "python/24_Multiple Inheritance.md"
+          - "Mixins": "python/25_Mixins.md"
+          - "Abstract Base Classes (ABCs)": "python/26_Abstract Base Classes (ABCs).md"
+          - "Name Mangling": "python/27_Name Mangling.md"
+          - "Function Overloading": "python/28_Function Overloading.md"
+          - "Singleton Pattern": "python/34_Singleton Pattern.md"
+      - "Iterators, Generators & Coroutines":
+          - "Iterators": "python/29_Iterators.md"
+          - "Custom Iterators": "python/30_Custom Iterators.md"
+          - "Generators": "python/31_Generators.md"
+          - "Coroutines": "python/32_Coroutines.md"
+          - "Memoization": "python/33_Memoization.md"
+      - "Design Patterns & Architecture":
+          - "Design Patterns": "python/35_Design Patterns.md"
+          - "Context Managers": "python/36_Context Managers.md"
+          - "Context Variables": "python/37_Context Variables.md"
+      - "Data & Serialization":
+          - "Serialization (Pickling, JSON)": "python/41_Serialization (Pickling, JSON).md"
+          - "Regular Expressions": "python/42_Regular Expressions.md"
+          - "Parsing (XML, JSON, HTML)": "python/43_Parsing (XML, JSON, HTML).md"
+          - "Data Structures (Linked Lists, Trees, Graphs)": "python/44_Data Structures (Linked Lists, Trees, Graphs).md"
+          - "Algorithms (Sorting, Searching)": "python/45_Algorithms (Sorting, Searching).md"
+          - "Computational Geometry": "python/46_Computational Geometry.md"
+      - "Concurrency & Parallelism":
+          - "Threading": "python/47_Threading.md"
+          - "Synchronization (Locks, Semaphores)": "python/48_Synchronization (Locks, Semaphores).md"
+          - "Multiprocessing": "python/49_Multiprocessing.md"
+          - "Parallel Processing": "python/50_Parallel Processing.md"
+          - "Asynchronous Programming": "python/51_Asynchronous Programming.md"
+      - "Networking, Testing & Tooling":
+          - "Networking (Sockets, HTTP)": "python/52_Networking (Sockets, HTTP).md"
+          - "Debugging Techniques": "python/53_Debugging Techniques.md"
+          - "Testing Frameworks (pytest, unittest)": "python/54_Testing Frameworks (e.g., pytest, unittest).md"
+          - "Packaging and Distribution": "python/55_Packaging and Distribution.md"
+  - Math:
+      - "Home": "math/math-index.md"
+      - "Linear Algebra":
+          - "Vectors and Matrices": "math/01_Vectors and Matrices.md"
+          - "Vector Spaces": "math/02_Vector Spaces.md"
+          - "Matrix Decompositions": "math/03_Matrix Decompositions.md"
+          - "Tensors": "math/04_Tensors.md"
+      - "Calculus":
+          - "Multivariate Calculus": "math/05_Multivariate Calculus.md"
+          - "Derivatives": "math/06_Derivatives.md"
+          - "The Chain Rule": "math/07_The Chain Rule.md"
+          - "Jacobian and Hessian": "math/08_Jacobian and Hessian.md"
+      - "Probability & Statistics":
+          - "Probability Distributions": "math/09_Probability Distributions.md"
+          - "Bayesian Statistics": "math/10_Bayesian Statistics.md"
+          - "Estimations (MLE & MAP)": "math/11_Estimations.md"
+          - "Information Theory": "math/12_Information Theory.md"
+      - "Optimization Methods":
+          - "Gradient Descent Variants": "math/13_Gradient Descent Variants.md"
+          - "Advanced Optimizers": "math/14_Advanced Optimizers.md"
+          - "Optimization Landscapes": "math/15_Optimization Landscapes.md"
+
+
