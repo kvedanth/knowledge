@@ -135,5 +135,32 @@ nav:
           - "Gradient Descent Variants": "math/13_Gradient Descent Variants.md"
           - "Advanced Optimizers": "math/14_Advanced Optimizers.md"
           - "Optimization Landscapes": "math/15_Optimization Landscapes.md"
+  - Interview:
+      - "Home": "interview/interview-index.md"
+      - "LLM Foundations & Retrieval":
+          - "Transformer Architecture": "interview/transformer-architecture-attention-positional-encoding-kv-cache.md"
+          - "RAG vs Fine-Tuning": "interview/rag-vs-fine-tuning-when-to-use-each-and-hybrid-approaches.md"
+          - "Vector Database Selection": "interview/vector-database-selection-pgvector-vs-azure-ai-search-vs-pinecone-vs-weaviate.md"
+          - "Chunking Strategy Trade-offs": "interview/chunking-strategy-trade-offs-for-enterprise-documents.md"
+          - "MCP Protocol": "interview/mcp-protocol-purpose-benefits-security-considerations.md"
+      - "Agents & Evaluation":
+          - "Multi-Agent vs Single-Agent Design": "interview/multi-agent-vs-single-agent-design-decision-criteria.md"
+          - "LLM Evaluation (Offline vs Online)": "interview/llm-evaluation-methodology-offline-vs-online.md"
+      - "Platform, Cost & Operations":
+          - "Build vs Buy for LLM Infrastructure": "interview/build-vs-buy-for-llm-infrastructure.md"
+          - "Azure OpenAI vs Self-Hosted Models": "interview/azure-openai-vs-self-hosted-open-source-model-selection-criteria.md"
+          - "MLOps vs LLMOps": "interview/mlops-vs-llmops-key-differences.md"
+          - "Cost Optimization at Scale": "interview/cost-optimization-for-llm-applications-at-scale.md"
+          - "Observability for LLM Applications": "interview/observability-design-for-llm-applications-what-to-instrument.md"
+          - "High Availability & DR": "interview/high-availability-and-dr-for-ai-serving-infrastructure.md"
+      - "Security, Governance & Responsible AI":
+          - "Prompt Injection": "interview/prompt-injection-attack-vectors-and-mitigations.md"
+          - "Data Governance (PII, Residency, Lineage)": "interview/data-governance-for-ai-systems-pii-residency-lineage.md"
+          - "Responsible AI in Practice": "interview/responsible-ai-principles-applied-to-a-real-use-case.md"
+          - "NIST AI RMF": "interview/nist-ai-rmf-how-you-would-apply-it-to-a-new-project.md"
+      - "Architecture & Communication":
+          - "Architecture Trade-off Methodology (CAP)": "interview/architecture-trade-off-methodology-cap-theorem-in-ai-context.md"
+          - "Explaining AI Architecture to Executives": "interview/how-to-explain-an-ai-architecture-to-a-non-technical-executive.md"
+          - "ERP/Integration Experience Transfer": "interview/how-enterprise-erp-integration-experience-transfers-to-ai-architecture.md"
 
 
