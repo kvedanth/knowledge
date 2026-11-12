@@ -1,0 +1,142 @@
+You are an expert career coach, technical interviewer, curriculum designer, and Markdown documentation specialist.
+
+Your task is to read the attached file named `interview_topics.txt`. The file contains exactly 20 interview topics. Create a comprehensive interview-preparation knowledge base for all topics.
+
+## Primary objectives
+
+1. Read and extract all 20 topics from `interview_topics.txt`.
+2. Create one separate Markdown file for each topic.
+3. Create a central `interview-index.md` file that provides:
+   - A left-side navigation panel listing all 20 topics.
+   - A right-side content pane that displays the selected topic document.
+4. Ensure every individual topic file contains a clearly visible link back to `interview-index.md`.
+5. Save all generated Markdown files in the same output directory.
+
+## Topic extraction rules
+
+- Preserve the original topic names and their order from `interview_topics.txt`.
+- Ignore blank lines, numbering symbols, and unnecessary leading or trailing spaces.
+- Do not merge, rename, omit, or invent topics.
+- Verify that exactly 20 topic files are generated.
+- If two topic names produce the same filename, append a unique numeric suffix.
+- Use lowercase, hyphen-separated filenames.
+
+Examples:
+
+- `Prompt Engineering` → `prompt-engineering.md`
+- `Large Language Models` → `large-language-models.md`
+- `RAG & Vector Databases` → `rag-vector-databases.md`
+
+## Required structure for every topic file
+
+Each topic file must follow the structure below.
+
+# <Topic Name>
+
+> [← Back to Interview Preparation Home](interview-index.md)
+
+## 1. Brief Summary
+
+Provide a clear but detailed explanation of the topic.
+
+Include:
+
+- Definition
+- Why the topic is important
+- Core concepts and terminology
+- How it works
+- Where it is used
+- Important tools, frameworks, libraries, standards, or platforms
+- Common misconceptions
+- Key points an interview candidate should remember
+
+The summary should be understandable to a beginner but useful to an experienced professional preparing for technical interviews.
+
+## 2. Interview Questions
+
+Organize interview questions by difficulty.
+
+### Beginner Questions
+
+Provide at least 8 beginner-level interview questions.
+
+For every question, include:
+
+- Question
+- Concise model answer
+- Key points expected by an interviewer
+- Common mistake or weak answer to avoid
+
+### Intermediate Questions
+
+Provide at least 8 intermediate-level interview questions.
+
+For every question, include:
+
+- Question
+- Detailed model answer
+- Key technical considerations
+- Follow-up question an interviewer may ask
+
+### Advanced Questions
+
+Provide at least 8 advanced or scenario-based interview questions.
+
+For every question, include:
+
+- Question or scenario
+- Detailed model answer
+- Design considerations
+- Trade-offs
+- Potential follow-up questions
+
+Questions must test understanding, practical application, troubleshooting, architecture, performance, security, scalability, and decision-making where relevant.
+
+## 3. Use Cases
+
+### Simple Use Case
+
+Include:
+
+- Business or technical problem
+- Assumptions
+- Step-by-step solution
+- Expected result
+- Tools or technologies used
+
+### Intermediate Use Case
+
+Include:
+
+- Realistic business scenario
+- Requirements
+- Proposed solution
+- Implementation steps
+- Technical challenges
+- Expected result
+- Testing approach
+
+### Difficult Use Case
+
+Include:
+
+- Enterprise-grade or production scenario
+- Functional and non-functional requirements
+- Proposed architecture
+- Components and their responsibilities
+- Data flow or processing flow
+- Security considerations
+- Performance and scalability considerations
+- Monitoring and observability
+- Failure scenarios and recovery strategy
+- Trade-offs and alternative solutions
+
+Use Mermaid diagrams when a diagram materially improves the explanation.
+
+Example:
+
+```mermaid
+flowchart LR
+    A[Input] --> B[Processing]
+    B --> C[Validation]
+    C --> D[Output]

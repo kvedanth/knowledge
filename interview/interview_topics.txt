@@ -1,0 +1,20 @@
+RAG vs fine-tuning — when to use each and hybrid approaches
+Vector database selection (pgvector vs Azure AI Search vs Pinecone vs Weaviate)
+Chunking strategy trade-offs for enterprise documents
+LLM evaluation methodology (offline vs online)
+Multi-agent vs single-agent design — decision criteria
+Prompt injection — attack vectors and mitigations
+Build vs buy for LLM infrastructure
+MLOps vs LLMOps — key differences
+Responsible AI principles applied to a real use case
+Cost optimization for LLM applications at scale
+Azure OpenAI vs self-hosted open-source model — selection criteria
+Data governance for AI systems (PII, residency, lineage)
+Observability design for LLM applications (what to instrument)
+High availability and DR for AI serving infrastructure
+Transformer architecture — attention, positional encoding, KV cache
+MCP protocol — purpose, benefits, security considerations
+NIST AI RMF — how you would apply it to a new project
+How to explain an AI architecture to a non-technical executive
+Architecture trade-off methodology (CAP theorem in AI context)
+How enterprise ERP/integration experience transfers to AI architecture
